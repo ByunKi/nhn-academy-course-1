@@ -1,6 +1,6 @@
-# nhn-academy-Course-1-text
+# nhn-academy-Course-1
 
-nhn 아카데미 광주 4기, 선택과정 1 요약정리를 업로드하는 공간
+nhn 아카데미 광주 4기, [선택과정 1](https://www.inf.unibz.it/~calvanese/teaching/04-05-ip/lecture-notes/)에 대한 요약정리를 업로드하는 공간
 
 ## 학습 내용
 
