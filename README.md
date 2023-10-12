@@ -17,3 +17,4 @@ nhn 아카데미 광주 4기, [선택과정 1](https://www.inf.unibz.it/~calvane
 | 2023.10.03 | [Introduction to Programming Unit 8 정리](https://github.com/ByunKi/nhn-academy-Course-1-text/blob/main/Introduction-to-programming/8_Files%20and%20input%20and%20output%20streams.md) |
 | 2023.10.04 | [Introduction to Programming Unit 9 정리](https://github.com/ByunKi/nhn-academy-Course-1-text/blob/main/Introduction-to-programming/9_Program%20errors%20and%20exception%20handling.md) |
 | 2023.10.05 | [Introduction to Programming Unit 10 정리](https://github.com/ByunKi/nhn-academy-Course-1-text/blob/main/Introduction-to-programming/10_Recursion.md) |
+| 2023.10.12 | [Introduction to Programming Unit 2 연습문제 풀이](https://github.com/ByunKi/nhn-academy-Course-1-text/blob/main/Introduction-to-programming/10_Recursion.md) |
