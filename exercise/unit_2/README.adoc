@@ -1,0 +1,17 @@
+= Exercises
+
+* Exercise 02.1
+** Write a Java program that creates an object of type String representing your name, and prints the first and the last characters of the string.
+
+* Exercise 02.2
+** Illustrate by means of a diagram what happens in memory when the program of Exercise 2.1 is executed.
+
+* Exercise 02.3
+** Modify the Java program in Exercise 2.1 using as few variables as possible.
+
+* Exercise 02.4
+** Write a Java program that reads from input a non-empty string and prints the string obtained from it by inverting the first and the last characters. Illustrate by means of a diagram what happens in memory when the program is executed.
+
+* Exercise 02.5 
+** Solve Exercise 2.4 using the class StringBuffer. Illustrate by means of a diagram what happens in memory when the program is executed.
+
