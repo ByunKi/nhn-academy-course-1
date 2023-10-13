@@ -1,0 +1,173 @@
+= Exercises
+
+* Exercise 04.1
+** Write a method:
+*** that, given an amount x in Lire, returns the corresponding amount in Euro.
+
+[source,java]
+----
+public static double convertLireEuro(int x)
+----
+
+---
+
+* Exercise 04.2
+** Write a predicate:
+*** that returns true if x+y causes overflow, and false otherwise.
+
+[source,java]
+----
+public static boolean sumOverflow(byte x, byte y)
+----
+
+** Hint: 
+*** Assign first x and y to two variables of type short. Then compute the sum using the two new variables, and return the result of an expression of type boolean that verifies whether the result of the sum can fit into a byte, i.e., is greater than or equal to -128 and smaller than or equal to 127.
+
+---
+
+* Exercise 04.3
+** Write a program that reads from the keyboard two integer number and prints on the screen:
+*** their arithmetic mean (i.e., their sum divided by 2)
+*** their geometric mean (the square root of their product)
+*** the greater and the smaller of the two numbers.
+
+** Hint: 
+*** use the methods of the class Math. For example, to calculate the square root, use the method Math.sqrt.
+
+---
+
+* Exercise 04.4
+**  Write a predicate with header
+*** that returns true if the number x is even, false otherwise.
+
+[source,java]
+----
+public static boolean even(long x)
+----
+
+** Hint: 
+*** use the operator % for the rest of the integer division and the equality operator == to construct an expression of type boolean, and return the result of such an expression with return.
+
+---
+
+* Exercise 04.5
+** Correct the following fragment of a Java program in such a way that it compiles without errors. The correction should be made without changing the types of the variables.
+
+[source,java]
+----
+short x = 22;
+byte y = x;
+System.out.println(y);
+----
+
+---
+
+* Exercise 04.6
+** Consider the following variable declarations:
+
+[source,java]
+----
+byte b;
+short s;
+int i;
+long l;
+float f;
+double d;
+char c;
+boolean b1, b2;
+
+b+10L
+(b+i)*l
+(b+i)*l+f
+s/f + Math.sin(f)
+c == 'b'
+l+1.5f
+i<10
+b1 == (f >= 5.0)
+b1 && !b2
+----
+
+---
+
+* Exercise 04.7 
+** Given the variable declarations of Exercise 4.6, say which of the following statements causes a compiler error:
+
+[source,java]
+----
+byte b;
+short s;
+int i;
+long l;
+float f;
+double d;
+char c;
+boolean b1, b2;
+
+s = 65L;
+f = i+100;
+i = 2*b + l;
+b1 = s;
+b2 = s >= 57;
+c = b;
+c = 'b';
+----
+
+---
+
+* Exercise 04.8
+** What does the following program print when it is executed?
+
+[source,java]
+----
+public class Account {
+  public int bal;
+  public Account(int x) {
+    bal = x;
+  }
+}
+
+public class Exercise_4_8 {
+  public static void method(int a, Account b) {
+    a *= 2;
+    b.bal *= 2;
+  }
+  public static void main(String[] args) {
+    int c = 100;
+    Account r = new Account(100);
+    method(c,r);
+    System.out.println(c + " " + r.bal);
+  }
+}
+----
+
+---
+
+* Exercise 04.9
+** Write a class Product to maintain information about goods of a certain product that are stored in a warehouse. 
+** Each object of type Product is characterized by the name of the product (fixed the moment the product is created) and by the number of pieces of the product that are stored in the warehouse (initially 0). 
+** Implement the methods downLoad (to increment the number of stored pieces), upLoad (to reduce the number of stored pieces), and toString to return the information about a product (e.g., "Okinawa lamp, 25 pieces").
+
+
+[source,java]
+----
+public class TestProduct {
+  public static void main (String[] args) {
+    Product lamp = new Product("Lamp 60 Watt");
+    System.out.println("Before the loading: " + lamp);
+    lamp.downLoad(1000);
+    lamp.upLoad(100);
+    System.out.println("After the loading: " + lamp);
+  }
+}
+----
+
+---
+
+* Exercise 04.10
+**  Write a method with header
+*** that returns the last character of the string s passed as a parameter.
+
+[source,java]
+----
+public static char lastCharacter(String s)
+----
