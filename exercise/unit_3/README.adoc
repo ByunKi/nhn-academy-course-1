@@ -1,0 +1,79 @@
+= Exercises
+
+* Exercise 03.1 
+** Define a classe Book to handle the information associated to books. The information of interest for a book are: the title, the authors, and the price. The methods of interest are:
+*** a constructor to create a book object, with title and authors as parameters;
+*** printBook, which prints the title and the authors of a book on two lines;
+*** printBookPrice, which prints the title, the authors, and the price of the book;
+*** windowBook, which shows the title and the authors of a book on two lines in an output window;
+*** getTitle, which returns the title of a book;
+*** getAuthors, which returns the authors of a book;
+*** getPrice, which returns the price of a book;
+*** setPrice, which sets the price of a book to the integer value passed as parameter (note: use the primitive type int for integers - see Unit 4).
+
+---
+
+* Exercise 03.2 
+** Write a Java class implementing an example client for the class Book of Exercise 3.1. The example class should perform the following operations:
+*** read from the keyboard the title and authors of a first book, and create a corresponding object;
+*** read from the keyboard the title and authors of a second book, and create a corresponding object;
+*** show the information about the first book;
+*** show the information about the second book;
+*** read the price of the first book and update the object accordingly;
+*** show the information about the first book, including the price.
+
+---
+
+* Exercise 03.3 
+** We want to realize a system for composing messages to send via a cell phone. Each message corresponds to a code. For example, to the code "ily" corresponds the complete message "I love you, darling.". Define the class MessageText to handle messages. The class must have:
+*** a method to create an object MessageText by reading the code and the complete message from the keyboard;
+*** a method to return the code of a message;
+*** a method to return the text of the message.
+ 
+---
+
+* Exercise 03.4 
+** A message must contain the number to call, the number of the sender, and the message text. Define a class Message, with:
+*** a method that creates an instance starting from an object of the class MessageText and two strings that represent the number to call and the number of the sender;
+*** a method that creates an instance starting from an object of the class MessageText and a string that represents the number of the sender;
+*** a method that creates an instance starting from an object of the class MessageText;
+*** a method that takes as parameter a phone number, and uses it to update the number to call of the message;
+*** a method that prints the message.
+
+---
+
+* Exercise 03.5
+** Write an example program that uses the two classes MessageText and Message. The program should:
+*** inizialize a variable of type String that corresponds to the phone number of the sender;
+*** read the text and the code of a message, and store them in an object of type MessageText;
+*** read the phone number of the receiver;
+*** create an object of type Message;
+*** show the information about the object of type Message.
+** Define (and use) an auxiliary static method for reading a phone number from the keyboard. Solve the exercise so as to use all methods that have been defined in the classes MessageText and Message (possibly by creating and printing various messages).
+ 
+---
+
+* Exercise 03.6 
+** Modify the classes Book (Exercise 3.1) and MessageText (Exercise 3.3) by defining static methods to read the input from the keyboard. Test these methods by suitably modifying the example programs.
+
+---
+
+* Exercise 03.7 
+** Extend the class Book (Exercise 3.1), by defining other classes:
+*** for textbooks, where we can specify also the course to which they refer;
+*** for textbooks of the Free University of Bolzano, where we can specify also the faculty for which the book has been chosen;
+*** for novels, where we can specify also the type.
+*** For each of the above classes, define the constructor and suitably redefine the method 
+** for the visualization of the object. Describe the hierarchy of classes.
+
+---
+
+* Exercise 03.8 
+** Write an example program for the classes defined in Exercises 3.6 and 3.7, that realizes the following operations.
+*** for a first book, read the title, the authors, the course, and the faculty adopting it, and store this information in an object;
+*** show the information about the first book;
+*** for a second book, read the title and the authors, and store them in a suitable object;
+*** read the topic of the second book, and create a third object of type novel;
+*** show the information about the two objects used to create the second book;
+*** read the price of the first book and update the corresponding object accordingly;
+*** show the information about the first book, including the price.
