@@ -1,0 +1,90 @@
+= Exercises
+
+* Exercise 07.1
+** Write a method `static double scalarProduct(double[] A, double[] B)` that calculates the scalar product of two arrays A and B, assuming they have the same length. 
+** We recall that the scalar product of A and B is obtained as the sum of the products `A[i]*B[i], for all i, with 0 < = i < A.length`.
+
+---
+
+* Exercise 07.2
+** Write a method `static int[] intersection(int[] A, int[] B)` that returns a new array containing the intersection of two arrays A and B, i.e., exactly those elements that are present both in A and in B (independently of their position). 
+** We may assume that A and B do not contain duplicates, i.e., elements that appear more than once in the array.
+
+---
+
+* Exercise 07.3 
+** Write a method `static double[][] transposeMatrix(double[][] M)` that returns a new matrix that is the transpose of the matrix M.
+** We recall that the transpose of a matrix M is obtained by exchanging the rows with the columns, which corresponds to exchange M[i][j] with M[j][i], for each pair of valid indexes i and j.
+
+---
+
+* Exercise 07.4 
+** Write a method, `static int[] matrixSumColumns(int[][])` that takes as parameter a matrix and returns an array with one element for each column of the matrix
+** the element of index i of the array must be equal to the sum of the elements of column i of the matrix.
+
+---
+
+* Exercise 07.5 
+** Write a predicate `static boolean equalArrays(int[] A, int[] B)` that returns true if the two arrays A and B are equal (i.e., A[i] is equal to B[i], for each i), and false otherwise.
+
+---
+
+* Exercise 07.6
+** A duplicate in an array is a value that appears more than once as element of the array. ** Write a method `static int numberOfDuplicates(int[] A)` that returns the number of distinct duplicates in the array A. 
+** Write also a method `static int numberOfDistinctValues(int[] A)` that returns the number of distinct values in the array A.
+
+---
+
+* Exercise 07.7
+** Write a method `static int[] removeDuplicates(int[] A)` that returns a new array obtained from A by removing all duplicates. 
+** The duplicates should be removed by keeping only the first occurrence of each distinct element, and shifting remaining elements upwards when a duplicate is removed.
+
+---
+
+* Exercise 07.8
+** What does the following method calculate?
+
+[source, java]
+----
+public static int mystery(int[] A) {
+  int x = 0;
+  for (int i = 0; i < A.length; i++)
+    if (A[i] % 2 == 1) x++;
+  return x;
+}
+----
+
+---
+
+* Exercise 07.9 
+** A matrix M is said to be `symmetric`  if it is square (i.e., has the same number of rows and columns) and M[i][j] is equal to M[j][i], for each pair of valid indexes i and j. 
+** Write a predicate `static boolean symmetric (int[][] M)` that returns true if the matrix M is `symmetric` , and false otherwise.
+
+---
+
+* Exercise 07.10 
+** A matrix M is said to be `lower triangular`. if all elements `M[i][j] with i<j` (i.e., that are "above" the main diagonal) are equal to 0. 
+** Write a predicate `static boolean lowerTriangular(int[][] M)` that returns true if the matrix M is `lower triangular`, and false otherwise.
+
+---
+
+* Exercise 07.11 
+** A matrix M is said to be `diagonal` if all elements M[i][j] with i different from j (i.e., that are not on the main diagonal) are equal to 0. 
+** Write a predicate `static boolean diagonal(int[][] M)` that returns true if the matrix M is `diagonal`, and false otherwise.
+
+---
+
+* Exercise 07.12
+** Realize a Java class Apartment, whose objects maintain the following information:
+*** an integer that indicates the size in square meters of the apartment, the address, and a list of maximal 10 names of persons that live in the apartment. 
+*** Each person living in the apartment has an associated number between 0 and the number of persons currently living in the apartment minus 1. 
+
+** The class should export the following functionalities:
+*** a constructor that takes a size and an address and creates an apartment that is initially empty;
+*** a method that returns the size of the apartment;
+*** a method that returns the address of the apartment;
+*** a method that returns the number of persons currently living in the apartment;
+*** a method that takes as parameter the name of a person, and adds the person to those living in the apartment; the person gets assigned the next available number, if there is still room; if the apartment is full (i.e., 10 persons already live there), the method does nothing;
+*** a method that takes as parameter a nonnegative integer number and returns the name of the person associated to that number and living in the apartment; if the number is greater than or equal to the number of persons in the apartment, the method returns null;
+*** a method that takes as parameter a nonnegative integer number and removes the person associated to that number from the apartment; the number associated to all following persons should be decreased by one; if the number is greater than or equal to the number of persons in the apartment, the method does nothing.
+*** a method `toString` that does overriding of `toString` inherited from object, and returns a string with all the information about the apartment.
