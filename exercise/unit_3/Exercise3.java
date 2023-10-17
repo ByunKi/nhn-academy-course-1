@@ -28,5 +28,8 @@ public class Exercise3 {
             return extended;
         }
 
+        public void setExtended(String str) {
+            this.extended = str;
+        }
     }
 }
