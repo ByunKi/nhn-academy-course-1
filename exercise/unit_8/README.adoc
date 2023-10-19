@@ -1,0 +1,88 @@
+= Exercises
+
+* Exercise 08.1
+** Write a class IOStrings containing two public static methods:
+
+`String[] loadArray(InputStream is, int n)`
+
+** that returns an array of `n strings` read from the input channel specified by `is`;
+
+`void saveArray(OutputStream os, String[] sa)`
+
+** that writes the array of `strings sa` to the output channel specified by `os`.
+
+---
+
+* Exercise 08.2
+** Write a public static method that reads from the keyboard a sequence of positive integers until the value 0 is inserted, and returns a double representing the average of the read values 
+** without considering the final 0.
+
+---
+
+* Exercise 08.3
+** Write a public static method that prints on the video all lines of a file that start with one of the characters `/, ;, %`. 
+** The name of the file should be given as a parameter.
+
+---
+
+* Exercise 08.4
+** Write a public static method that takes as parameters a string representing a filename and an integer `n`, and writes on the file the multiplication table of size `n`. 
+** For example, for `n = 3`, the method should write:
+
+  1  2  3
+  2  4  6
+  3  6  9
+
+---
+
+* Exercise 08.5
+** Write a public static method that reads from a file information about exam marks obtained by students, organized as follows
+
+  Rossi 25 24 26 30 24 30
+  Bianchi 20 24 25
+  Verdi 30 24 30 27
+
+** The method should return a string representing the name of the student with the highest average marking.
+
+---
+
+* Exercise 08.6
+** Realize a class `IOFile` that exports some functionalities on text files. 
+** The class should have a constructor with one parameter of type String, representing the name of the file on which to operate, and should export the following methods:
+
+*** `int countLines()` : that returns the number of lines of the file;
+*** `void write(OutputStream os)` : that writes the content of the file to os;
+*** `void print()` : that prints the content of the file to the video;
+*** `void copy(String filename)` : that copies the content of the file to the file specified by filename;
+*** `void delete()` : that deletes the file from mass-storage.
+
+---
+
+* Exercise 08.7
+** Realize a class HandleBAs to handle a set of bank accounts, represented as in Units 4 and 5. 
+** The class HandleBAs should export the following methods:
+*** `HandleBAs(String filename)` : constructor that takes as parameter the name of a text file on which the data about the bank accounts is stored, and creates a object associated to that file;
+*** `void interests(double rate)` : that updates the balance of all accounts by applying the interest rate specified by the parameter;
+*** `printNegative()` : that prints on the video the data about all bank accounts with a negative balance.
+** The data for the bank accounts are stored on a text file according to the following format:
+
+  name
+  surname
+  balance
+
+---
+
+* Exercise 08.8
+** Add to the class Apartment of Exercise 7.12 a `public method saveToFile` that takes as a parameter a filename and saves the data about the apartment to the file.
+** Add also a `public static method readFromFile` that takes as a parameter a BufferedReader object specifying an input channel, reads from the channel the data about an apartment (organized as written by saveToFile), and constructs and returns the apartment.
+** write a static method, client of the class Apartment, that takes as parameter a filename and prints on the video all the information about the apartments on the file.
+
+---
+
+* Exercise 08.9
+** Realize a Java class Matrix to represent bidimensional matrices of real numbers. The class should export the following methods:
+*** `Matrix(int n, int m)` : constructor that creates a matrix of size nxm, with all values initially set to 0;
+*** `void save(String filename)` : that saves the content of the matrix on the file specified by filename;
+*** `static Matrix read(String filename)` : that reads the data about a matrix from the file specified by filename, creates the matrix, and returns it;
+*** `Matrix sum(Matrix m)` : that returns the matrix that is the sum of the object and of m, if the two matrices have the same dimensions, and null otherwise;
+*** `Matrix product(Matrix m)` : that returns the matrix that is the product of the object and of m, if the two matrices have compatible dimensions, and null otherwise.
