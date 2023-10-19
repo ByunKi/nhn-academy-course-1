@@ -22,4 +22,4 @@ nhn 아카데미 광주 4기, [선택과정 1](https://www.inf.unibz.it/~calvane
 | 2023.10.14 | [Introduction to Programming Unit 4 연습문제 풀이](https://github.com/ByunKi/nhn-academy-course-1/tree/main/exercise/unit_4)                                                            |
 | 2023.10.15 | [Introduction to Programming Unit 5 연습문제 풀이](https://github.com/ByunKi/nhn-academy-course-1/tree/main/exercise/unit_5)                                                            |
 | 2023.10.17 | [Introduction to Programming Unit 6 연습문제 풀이](https://github.com/ByunKi/nhn-academy-course-1/tree/main/exercise/unit_6)                                                            |
-| 2023.10.19 | [Introduction to Programming Unit 6 연습문제 풀이](https://github.com/ByunKi/nhn-academy-course-1/tree/main/exercise/unit_7)                                                            |
+| 2023.10.19 | [Introduction to Programming Unit 7 연습문제 풀이](https://github.com/ByunKi/nhn-academy-course-1/tree/main/exercise/unit_7)                                                            |
